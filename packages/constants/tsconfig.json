@@ -5,5 +5,5 @@
     "sourceMap": true,
     "isolatedModules": true
   },
-  "include": ["."]
+  "include": ["src"]
 }

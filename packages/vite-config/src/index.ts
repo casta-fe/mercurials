@@ -3,15 +3,15 @@ import {
   createUiViteESConfig,
   createUiViteFullStyleConfig,
   createUiViteUMDConfig,
-} from './src/ui'
+} from './ui'
 import {
   createPackageViteCJSConfig,
   createPackageViteESConfig,
   createPackageViteUMDConfig,
-} from './src/package'
-import type { ViteParams } from './src/types'
+} from './package'
+import type { ViteParams } from './types'
 
-export * from './src/types'
+export * from './types'
 
 export default function createViteConfig(params: ViteParams) {
   const { strategy } = params

@@ -4,10 +4,8 @@ import childProcess from 'child_process'
 import { Octokit } from 'octokit'
 import semver from 'semver'
 import { getPackages } from '@manypkg/get-packages'
+import { PKG_PREFIX, REPO_NAME, REPO_OWNER } from '@mercurials/constants'
 
-const PKG_PREFIX = '@mercurials'
-const REPO_OWNER = 'casta-fe'
-const REPO_NAME = 'mercurials'
 const cwd = process.cwd()
 
 // Create release on github

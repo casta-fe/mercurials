@@ -1,4 +1,5 @@
 import { nextTick } from 'vue'
+import { PKG_PREFIX, REPO_NAME, REPO_OWNER } from '@mercurials/constants'
 import type { App, ObjectDirective } from 'vue'
 
 // get input element

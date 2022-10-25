@@ -1,7 +1,6 @@
 {
   "name": "@mercurials/vite-config",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
   "description": "🚀 The package offer vite for mercurials!",
   "keywords": [
     "monorepo",
@@ -21,7 +20,7 @@
   "module": "./dist/index.mjs",
   "exports": {
     ".": {
-      "dev": "./index.ts",
+      "dev": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
@@ -36,8 +35,7 @@
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "dev": "tsup ./index.ts --format esm,cjs --dts --watch",
-    "build": "rimraf dist && tsup ./index.ts --format esm,cjs --dts",
+    "build": "rimraf dist && tsup ./src/index.ts --format esm,cjs --dts",
     "lint": "run-s lint:**",
     "lint:eslint": "TIMING=1 eslint \"*.{js,jsx,ts,tsx,md,json}\" --fix",
     "lint:prettier": "prettier --write \"*.{js,ts,jsx,tsx,md,json}\"",

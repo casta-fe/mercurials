@@ -5,8 +5,8 @@ import { read } from '@changesets/config'
 import { readPreState } from '@changesets/pre'
 import readChangesets from '@changesets/read'
 import { getPackages } from '@manypkg/get-packages'
+import { PKG_PREFIX } from '@mercurials/constants'
 
-const PKG_PREFIX = '@mercurials'
 const cwd = process.cwd()
 // App packages
 const apps = fs

@@ -1,7 +1,6 @@
 {
   "name": "@mercurials/ts-config",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
   "description": "🚀 The package offer tsconfig for mercurials!",
   "keywords": [
     "monorepo",
