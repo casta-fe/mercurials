@@ -1,0 +1,9 @@
+{
+  "extends": "@mercurials/ts-config/web.json",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "isolatedModules": true
+  },
+  "include": ["index.ts", "src"]
+}

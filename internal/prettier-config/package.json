@@ -1,0 +1,37 @@
+{
+  "name": "@mercurials/prettier-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer prettier for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "prettier",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/internal/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "internal/prettier-config"
+  },
+  "scripts": {
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

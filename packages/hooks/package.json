@@ -1,0 +1,74 @@
+{
+  "name": "@mercurials/hooks",
+  "version": "0.0.0",
+  "description": "🚀 The package offer hooks for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vue",
+    "hooks"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/packages/hooks#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "main": "./dist/lib/index.cjs",
+  "module": "./dist/es/index.mjs",
+  "exports": {
+    ".": {
+      "dev": "./src/index.ts",
+      "types": "./dist/es/index.d.ts",
+      "require": "./dist/lib/index.cjs",
+      "import": "./dist/es/index.mjs"
+    },
+    "./dist": "./dist/dist/",
+    "./es": "./dist/es/index.mjs",
+    "./es/*": "./dist/es/*.mjs",
+    "./es/*.mjs": "./dist/es/*.mjs",
+    "./lib": "./dist/lib/index.cjs",
+    "./lib/*": "./dist/lib/*.js",
+    "./lib/*.cjs": "./dist/lib/*.cjs",
+    "./*": "./dist/*"
+  },
+  "unpkg": "./dist/dist/index.umd.js",
+  "jsdelivr": "./dist/dist/index.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "packages/hooks"
+  },
+  "types": "./dist/es/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "rimraf dist && run-p build:**",
+    "build:cjs": "vite build --config ./vite.config.cjs.build-lib.ts",
+    "build:es": "vite build --config ./vite.config.es.build-es.ts",
+    "build:umd": "vite build --config ./vite.config.umd.build-dist.ts",
+    "lint": "run-s lint:**",
+    "lint:eslint": "TIMING=1 eslint \"*.{js,jsx,ts,tsx,md,json}\" --fix",
+    "lint:prettier": "prettier --write \"*.{js,ts,jsx,tsx,md,json}\"",
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@mercurials/ts-config": "workspace:*",
+    "@mercurials/vite-config": "workspace:*",
+    "@types/lodash-es": "4.17.6",
+    "@types/node": "18.8.0",
+    "@vueuse/core": "9.3.0",
+    "lodash-es": "4.17.21",
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "vite": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

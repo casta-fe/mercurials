@@ -1,0 +1,74 @@
+{
+  "name": "mercurials-monorepo",
+  "private": true,
+  "packageManager": "pnpm@7.14.0",
+  "description": "🚀 A modern high-performance Monorepo project with pnpm + turbo + changeset + vite + vue3.x + ant-design-vue3.x!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vue",
+    "ant-design-vue"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git"
+  },
+  "scripts": {
+    "preinstall": "node ./scripts/preinstall.mjs",
+    "postinstall": "simple-git-hooks",
+    "dev": "turbo run dev --parallel --continue",
+    "dev:docs": "pnpm -- turbo run dev --filter=docs",
+    "build": "turbo run build",
+    "build:ui": "turbo run build:ui",
+    "build:ui-pro": "turbo run build:ui-pro",
+    "clean": "run-s clean:**",
+    "clean:workspace": "turbo run clean",
+    "clean:cache": "turbo run clean:cache",
+    "clean:root-cache": "rimraf .turbo && rimraf pnpm-lock.yaml && rimraf node_modules",
+    "lint": "turbo run lint",
+    "format": "turbo run lint:prettier",
+    "commit": "czg",
+    "prerelease": "tsx ./scripts/prerelease.ts",
+    "changelog:gen": "tsx ./scripts/changesets/generate.ts",
+    "changelog:write": "tsx ./scripts/changesets/write.ts",
+    "changeset:publish": "tsx ./scripts/changesets/releases.ts",
+    "changeset:gen": "changeset"
+  },
+  "devDependencies": {
+    "@changesets/assemble-release-plan": "5.2.2",
+    "@changesets/changelog-github": "0.4.7",
+    "@changesets/cli": "2.24.4",
+    "@changesets/config": "2.2.0",
+    "@changesets/pre": "1.0.13",
+    "@changesets/read": "0.5.8",
+    "@manypkg/get-packages": "1.1.3",
+    "@mercurials/commitlint-config": "workspace:*",
+    "@mercurials/eslint-config": "workspace:*",
+    "@mercurials/lint-staged-config": "workspace:*",
+    "@mercurials/prettier-config": "workspace:*",
+    "@mercurials/simple-git-hooks-config": "workspace:*",
+    "@mercurials/stylelint-config": "workspace:*",
+    "@types/node": "18.8.0",
+    "inquirer": "^9.1.2",
+    "npm-run-all": "^4.1.5",
+    "octokit": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "semver": "^7.3.7",
+    "tsup": "^6.3.0",
+    "tsx": "^3.11.0",
+    "turbo": "^1.5.6",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

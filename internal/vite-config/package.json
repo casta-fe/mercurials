@@ -1,0 +1,63 @@
+{
+  "name": "@mercurials/vite-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer vite for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vite-config"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/internal/vite-config#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "dev": "./index.ts",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "internal/vite-config"
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup ./index.ts --format esm,cjs --dts --watch",
+    "build": "rimraf dist && tsup ./index.ts --format esm,cjs --dts",
+    "lint": "run-s lint:**",
+    "lint:eslint": "TIMING=1 eslint \"*.{js,jsx,ts,tsx,md,json}\" --fix",
+    "lint:prettier": "prettier --write \"*.{js,ts,jsx,tsx,md,json}\"",
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@mercurials/constants": "workspace:*",
+    "@mercurials/ts-config": "workspace:*",
+    "@types/node": "18.8.0",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "@vitejs/plugin-vue-jsx": "2.0.1",
+    "rollup": "2.78.1",
+    "rollup-plugin-node-externals": "4.1.1",
+    "vite": "^3.1.7",
+    "vite-plugin-dts": "1.6.5",
+    "vue": "^3.2.41"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

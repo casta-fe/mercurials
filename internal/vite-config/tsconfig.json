@@ -1,0 +1,8 @@
+{
+  "extends": "@mercurials/ts-config/node16.module.json",
+  "compilerOptions": {
+    "composite": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*.ts"]
+}

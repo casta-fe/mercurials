@@ -1,0 +1,7 @@
+// Generate component BEM class name
+.ns(@component; @content) {
+  @component-name: ~'@{component-prefix}@{common-separator}@{component}';
+  .@{component-name} {
+    @content();
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "build:ui": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["@mercurials/constants#build", "@mercurials/vite-config#build", "@mercurials/ui#build"],
+      "cache": false
+    },
+    "build:ui-pro": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["@mercurials/constants#build", "@mercurials/vite-config#build", "@mercurials/ui#build", "@mercurials/ui-pro#build"],
+      "cache": false
+    },
+   
+
+    "clean": {
+      "cache": false
+    },
+    "clean:cache": {
+      "cache": false
+    },
+
+    "lint": {
+      "cache": false,
+      "outputs": []
+    },
+    "lint:prettier": {
+      "cache": false,
+      "outputs": []
+    },
+
+    "format": {
+      "cache": false,
+      "outputs": []
+    },
+
+    "test": {
+      "outputs": ["coverage/**"],
+      "dependsOn": []
+    },
+
+    "release": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@mercurials/ts-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer tsconfig for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "typescript",
+    "ts-config"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/internal/ts-config#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "files": [
+    "base.json",
+    "node16.common.json",
+    "node16.module.json",
+    "root.json",
+    "web.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "internal/ts-config"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

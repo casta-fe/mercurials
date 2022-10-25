@@ -1,0 +1,32 @@
+{
+  "name": "@mercurials/docs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer docs for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vue",
+    "docs"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/apps/docs#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "apps/docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

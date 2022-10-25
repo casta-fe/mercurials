@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "TSConfig Node16 Common",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "types": ["node"]
+  }
+}

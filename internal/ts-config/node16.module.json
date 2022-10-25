@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "TSConfig Node16 Module",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": ["node"]
+  }
+}

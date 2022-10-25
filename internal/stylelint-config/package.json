@@ -1,0 +1,50 @@
+{
+  "name": "@mercurials/stylelint-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer stylelint for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/internal/stylelint-config#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "internal/stylelint-config"
+  },
+  "scripts": {
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.13.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.17",
+    "postcss-html": "^1.5.0",
+    "postcss-less": "6.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^5.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.13.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

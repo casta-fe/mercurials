@@ -1,0 +1,32 @@
+{
+  "name": "@mercurials/playground",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer playground for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "vite",
+    "vue",
+    "playground"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/apps/playground#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "apps/playground"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

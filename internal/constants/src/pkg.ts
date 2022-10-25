@@ -1,0 +1,5 @@
+export const PKG_PREFIX = '@mercurials'
+export const PKG_NAME = 'mercurials'
+export const PKG_CAMELCASE_NAME = 'Mercurials'
+export const PKG_CAMELCASE_LOCAL_NAME = 'MercurialsLocale'
+export const PKG_BRAND_NAME = 'Mercurials'

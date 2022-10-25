@@ -1,0 +1,37 @@
+{
+  "name": "@mercurials/simple-git-hooks-config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "🚀 The package offer simple-git-hooks for mercurials!",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "turborepo",
+    "changesets",
+    "simple-git-hooks",
+    "simple-git-hooks-config"
+  ],
+  "homepage": "https://github.com/casta-fe/mercurials/blob/main/internal/simple-git-hooks-config#readme",
+  "bugs": {
+    "url": "https://github.com/casta-fe/mercurials/issues"
+  },
+  "license": "MIT",
+  "author": "i7eo <admin@i7eo.com> (https://github.com/i7eo)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/casta-fe/mercurials.git",
+    "directory": "internal/simple-git-hooks-config"
+  },
+  "scripts": {
+    "clean": "run-p clean:**",
+    "clean:cache": "rimraf .turbo && rimraf dist",
+    "clean:deps": "rimraf node_modules"
+  },
+  "dependencies": {
+    "simple-git-hooks": "2.8.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

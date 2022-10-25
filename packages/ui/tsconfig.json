@@ -1,0 +1,21 @@
+{
+  "extends": "@mercurials/ts-config/web.json",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "vue-types": ["../../node_modules/vue-types"],
+      "ant-design-vue": ["../../node_modules/ant-design-vue"]
+    }
+  },
+  "include": [
+    "src/components",
+    "src/hooks",
+    "src/tokens",
+    "src/utils",
+    "typings"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

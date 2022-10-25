@@ -1,0 +1,7 @@
+{
+  "extends": "@mercurials/ts-config/node16.module.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.*.ts"]
+}
